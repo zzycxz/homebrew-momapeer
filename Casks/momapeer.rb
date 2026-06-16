@@ -4,28 +4,28 @@ cask "momapeer" do
 
   on_macos do
     on_intel do
-      sha256 "d09171b06c8fb8384232b1fe49eac8ecbbc9f3572f174a48abf93e717d9c7e60"
+      sha256 "fcbf6005e591ed6dd2ebd3c4bde7f3bd4a0fd84431025b2c5843b87f9be55ef2"
       url "https://github.com/zzycxz/momapeer/releases/download/v#{version}/momapeer-darwin-amd64.tar.gz"
     end
     on_arm do
-      sha256 "e2625a88e12e0dcc6ff4d6321f23b59e1a8ffc5d8c55857cb4bdd1ec841d8b75"
+      sha256 "b369d1a89843f0e313c2fa9f882d5a3eac92fac952525f8de2ddabd1d0ba8582"
       url "https://github.com/zzycxz/momapeer/releases/download/v#{version}/momapeer-darwin-arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "42b7c1e1831cf46ee0856e8569076d532cc22780e9dd8131a6a0f6bd900af1e4"
+      sha256 "2c737f62e55d16e0708ea550f47b2b76152673322bd135b6d77a80fe7fec6836"
       url "https://github.com/zzycxz/momapeer/releases/download/v#{version}/momapeer-linux-amd64.tar.gz"
     end
     on_arm do
-      sha256 "c47f18e2ee6a2c7862b8d6c5881454ed68f5b842d5aad9d9fd858687bb0b4675"
+      sha256 "3465d3cd656dfa7aa09657b008ecad57c3f9a6e9d524c8e8dcdd28d2757acc7e"
       url "https://github.com/zzycxz/momapeer/releases/download/v#{version}/momapeer-linux-arm64.tar.gz"
     end
   end
 
   name "momapeer"
-  desc "A MoMA (---) AI coding agent for the terminal."
+  desc "A MoMA (九天) AI coding agent for the terminal."
   homepage "https://github.com/zzycxz/momapeer"
 
   livecheck do
@@ -36,9 +36,7 @@ cask "momapeer" do
 
   postflight do
     if OS.mac?
-
       system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/momapeer"]
-
     end
   end
 
