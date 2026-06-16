@@ -4,22 +4,22 @@ cask "momapeer" do
 
   on_macos do
     on_intel do
-      sha256 "88fa31a3fb29b71822b2bc7c7a8974ccee4dd36cb141d1ef9a53b31a7f861daf"
+      sha256 "d09171b06c8fb8384232b1fe49eac8ecbbc9f3572f174a48abf93e717d9c7e60"
       url "https://github.com/zzycxz/momapeer/releases/download/v#{version}/momapeer-darwin-amd64.tar.gz"
     end
     on_arm do
-      sha256 "56c5c31a3ed2d7f414b7db3f0052c64c510a6e8ce7d6125405d5c17ef27299df"
+      sha256 "e2625a88e12e0dcc6ff4d6321f23b59e1a8ffc5d8c55857cb4bdd1ec841d8b75"
       url "https://github.com/zzycxz/momapeer/releases/download/v#{version}/momapeer-darwin-arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "60b3f18ff47638a3635e9438476418b07ab1b7aeaca77c77409115b6b5a04548"
+      sha256 "42b7c1e1831cf46ee0856e8569076d532cc22780e9dd8131a6a0f6bd900af1e4"
       url "https://github.com/zzycxz/momapeer/releases/download/v#{version}/momapeer-linux-amd64.tar.gz"
     end
     on_arm do
-      sha256 "582a8b48775102868d03ee6634e88193c8184d467918419c29d1937b5107111e"
+      sha256 "c47f18e2ee6a2c7862b8d6c5881454ed68f5b842d5aad9d9fd858687bb0b4675"
       url "https://github.com/zzycxz/momapeer/releases/download/v#{version}/momapeer-linux-arm64.tar.gz"
     end
   end
